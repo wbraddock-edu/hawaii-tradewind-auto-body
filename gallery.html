@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery | Tradewind Auto Body — Kahului, Maui</title>
+  <meta name="description" content="Browse before-and-after photos from Tradewind Auto Body's collision repair and paint work in Kahului, Maui."/>
+  <meta property="og:title" content="Gallery | Tradewind Auto Body"/>
+  <meta property="og:description" content="Browse before-and-after photos from Tradewind Auto Body's collision repair and paint work in Kahului, Maui."/>
+  <meta property="og:image" content="https://picsum.photos/1200/630?random=1900"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+.gallery-filters { padding: 2rem 0 0; }
+.filter-btns { display:flex; gap:.75rem; flex-wrap:wrap; }
+.filter-btn { padding:.5rem 1.25rem; border-radius:2rem; border:2px solid var(--clr-primary); background:transparent; color:var(--clr-primary); cursor:pointer; font-weight:600; transition:all .2s; }
+.filter-btn.active,.filter-btn:hover { background:var(--clr-primary); color:#fff; }
+.gallery-masonry { columns:1; gap:1.25rem; }
+@media(min-width:600px){.gallery-masonry{columns:2;}}
+@media(min-width:900px){.gallery-masonry{columns:3;}}
+.gallery-item { position:relative; break-inside:avoid; margin-bottom:1.25rem; border-radius:var(--radius); overflow:hidden; }
+.gallery-item img { width:100%; display:block; transition:transform .4s; }
+.gallery-item:hover img { transform:scale(1.05); }
+.gallery-overlay { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent,rgba(21,67,96,.9)); color:#fff; padding:1.25rem; transform:translateY(100%); transition:transform .3s; }
+.gallery-item:hover .gallery-overlay { transform:translateY(0); }
+.gallery-overlay h3 { font-size:1rem; margin-bottom:.25rem; }
+.gallery-overlay p { font-size:.85rem; opacity:.9; }
+</style>
+</head>
+<body>
+
+    <header class="site-header" id="siteHeader">
+      <div class="header-inner container">
+        <a href="index.html" class="logo" aria-label="Tradewind Auto Body Home">
+          <svg width="44" height="44" viewBox="0 0 44 44" fill="none" aria-hidden="true">
+            <rect x="2" y="14" width="40" height="18" rx="5" fill="#154360"/>
+            <rect x="6" y="20" width="14" height="8" rx="2" fill="#5DADE2"/>
+            <rect x="24" y="20" width="12" height="8" rx="2" fill="#5DADE2"/>
+            <circle cx="11" cy="33" r="4" fill="#154360" stroke="#5DADE2" stroke-width="2"/>
+            <circle cx="33" cy="33" r="4" fill="#154360" stroke="#5DADE2" stroke-width="2"/>
+            <path d="M2 22 Q10 14 22 14 Q34 14 42 22" stroke="#5DADE2" stroke-width="2" fill="none"/>
+          </svg>
+          <span>Tradewind Auto Body</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" id="mainNav">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="blog.html">Blog</a>
+          <a href="booking.html">Booking</a>
+          <a href="faq.html">FAQ</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="admin.html">Admin</a>
+          <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">🌙</button>
+        </nav>
+      </div>
+    </header>
+
+    <section class="page-hero animate-in">
+      <div class="container">
+        <h1>Our Work</h1>
+        <p>Before and after transformations from Maui's most trusted auto body shop.</p>
+      </div>
+    </section>
+
+    <section class="gallery-filters container animate-in">
+      <div class="filter-btns">
+        <button class="filter-btn active" data-filter="all">All Work</button>
+        <button class="filter-btn" data-filter="collision">Collision Repair</button>
+        <button class="filter-btn" data-filter="paint">Paint &amp; Refinish</button>
+        <button class="filter-btn" data-filter="dent">Dent Removal</button>
+        <button class="filter-btn" data-filter="restore">Restoration</button>
+      </div>
+    </section>
+
+    <section class="gallery-grid container animate-in">
+      <div class="gallery-masonry">
+        <div class="gallery-item animate-in" data-category="collision">
+          <img src="https://picsum.photos/600/450?random=1920" alt="Rear Collision Repair" loading="lazy"/>
+          <div class="gallery-overlay">
+            <h3>Rear Collision Repair</h3>
+            <p>Complete rear-end reconstruction — back to factory spec</p>
+          </div>
+        </div>
+        <div class="gallery-item animate-in" data-category="paint">
+          <img src="https://picsum.photos/600/450?random=1921" alt="Full Respray — Pearl White" loading="lazy"/>
+          <div class="gallery-overlay">
+            <h3>Full Respray — Pearl White</h3>
+            <p>Factory-matched pearl white refinish, flawless finish</p>
+          </div>
+        </div>
+        <div class="gallery-item animate-in" data-category="dent">
+          <img src="https://picsum.photos/600/450?random=1922" alt="Paintless Dent Removal" loading="lazy"/>
+          <div class="gallery-overlay">
+            <h3>Paintless Dent Removal</h3>
+            <p>Hail damage — 40+ dents removed without repainting</p>
+          </div>
+        </div>
+        <div class="gallery-item animate-in" data-category="collision">
+          <img src="https://picsum.photos/600/450?random=1923" alt="Front End Reconstruction" loading="lazy"/>
+          <div class="gallery-overlay">
+            <h3>Front End Reconstruction</h3>
+            <p>Head-on impact repair including frame straightening</p>
+          </div>
+        </div>
+        <div class="gallery-item animate-in" data-category="paint">
+          <img src="https://picsum.photos/600/450?random=1924" alt="Two-Tone Custom Paint" loading="lazy"/>
+          <div class="gallery-overlay">
+            <h3>Two-Tone Custom Paint</h3>
+            <p>Custom flame red over midnight black — show quality</p>
+          </div>
+        </div>
+        <div class="gallery-item animate-in" data-category="restore">
+          <img src="https://picsum.photos/600/450?random=1925" alt="Classic Truck Restoration" loading="lazy"/>
+          <div class="gallery-overlay">
+            <h3>Classic Truck Restoration</h3>
+            <p>1978 F-100 — full body restoration and respray</p>
+          </div>
+        </div>
+        <div class="gallery-item animate-in" data-category="dent">
+          <img src="https://picsum.photos/600/450?random=1926" alt="Door Panel Dent Repair" loading="lazy"/>
+          <div class="gallery-overlay">
+            <h3>Door Panel Dent Repair</h3>
+            <p>Parking lot damage — seamless repair, color matched</p>
+          </div>
+        </div>
+        <div class="gallery-item animate-in" data-category="collision">
+          <img src="https://picsum.photos/600/450?random=1927" alt="Side Swipe Repair" loading="lazy"/>
+          <div class="gallery-overlay">
+            <h3>Side Swipe Repair</h3>
+            <p>Quarter panel replacement and full blend</p>
+          </div>
+        </div>
+        <div class="gallery-item animate-in" data-category="paint">
+          <img src="https://picsum.photos/600/450?random=1928" alt="Bumper Refinish" loading="lazy"/>
+          <div class="gallery-overlay">
+            <h3>Bumper Refinish</h3>
+            <p>Textured OEM bumper refinish with UV-resistant coating</p>
+          </div>
+        </div>
+        <div class="gallery-item animate-in" data-category="restore">
+          <img src="https://picsum.photos/600/450?random=1929" alt="Vintage VW Beetle" loading="lazy"/>
+          <div class="gallery-overlay">
+            <h3>Vintage VW Beetle</h3>
+            <p>Complete bare-metal restoration — show car quality</p>
+          </div>
+        </div>
+        <div class="gallery-item animate-in" data-category="collision">
+          <img src="https://picsum.photos/600/450?random=1930" alt="Insurance Claim Repair" loading="lazy"/>
+          <div class="gallery-overlay">
+            <h3>Insurance Claim Repair</h3>
+            <p>Full right-side collision repair — I-CAR certified work</p>
+          </div>
+        </div>
+        <div class="gallery-item animate-in" data-category="dent">
+          <img src="https://picsum.photos/600/450?random=1931" alt="Roof Hail Damage" loading="lazy"/>
+          <div class="gallery-overlay">
+            <h3>Roof Hail Damage</h3>
+            <p>Hurricane-season hail — 60+ dents, zero repainting needed</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section animate-in">
+      <div class="container cta-inner">
+        <h2>Ready to Restore Your Vehicle?</h2>
+        <p>Free estimates. Direct insurance billing. Maui's best craftsmanship.</p>
+        <a href="booking.html" class="btn btn-primary">Book Free Estimate</a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <svg width="36" height="36" viewBox="0 0 44 44" fill="none">
+              <rect x="2" y="14" width="40" height="18" rx="5" fill="#154360"/>
+              <rect x="6" y="20" width="14" height="8" rx="2" fill="#5DADE2"/>
+              <rect x="24" y="20" width="12" height="8" rx="2" fill="#5DADE2"/>
+              <circle cx="11" cy="33" r="4" fill="#154360" stroke="#5DADE2" stroke-width="2"/>
+              <circle cx="33" cy="33" r="4" fill="#154360" stroke="#5DADE2" stroke-width="2"/>
+            </svg>
+            <p>Expert collision repair &amp; refinishing on Maui. Restoring vehicles since 2003.</p>
+          </div>
+          <div class="footer-links">
+            <h4>Pages</h4>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="blog.html">Blog</a>
+            <a href="booking.html">Booking</a>
+            <a href="faq.html">FAQ</a>
+            <a href="reviews.html">Reviews</a>
+          </div>
+          <div class="footer-contact">
+            <h4>Contact</h4>
+            <p>355 Hana Hwy<br>Kahului, HI 96732</p>
+            <p><a href="tel:+18085550119">(808) 555-0119</a></p>
+            <p>Mon–Fri: 7:30am–5:30pm</p>
+            <p>Sat: 8am–2pm</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Tradewind Auto Body. All rights reserved.</p>
+          <p>Powered by <a href="https://designholistically.com" target="_blank">Design Holistically</a></p>
+        </div>
+      </div>
+    </footer>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+    <script src="js/main.js"></script>
+</body>
+</html>

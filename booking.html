@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book a Free Estimate | Tradewind Auto Body — Kahului, Maui</title>
+  <meta name="description" content="Schedule a free collision repair or paint estimate at Tradewind Auto Body in Kahului, Maui."/>
+  <meta property="og:title" content="Book a Free Estimate | Tradewind Auto Body"/>
+  <meta property="og:description" content="Schedule a free collision repair or paint estimate at Tradewind Auto Body in Kahului, Maui."/>
+  <meta property="og:image" content="https://picsum.photos/1200/630?random=1900"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  
+</head>
+<body>
+
+    <header class="site-header" id="siteHeader">
+      <div class="header-inner container">
+        <a href="index.html" class="logo" aria-label="Tradewind Auto Body Home">
+          <svg width="44" height="44" viewBox="0 0 44 44" fill="none" aria-hidden="true">
+            <rect x="2" y="14" width="40" height="18" rx="5" fill="#154360"/>
+            <rect x="6" y="20" width="14" height="8" rx="2" fill="#5DADE2"/>
+            <rect x="24" y="20" width="12" height="8" rx="2" fill="#5DADE2"/>
+            <circle cx="11" cy="33" r="4" fill="#154360" stroke="#5DADE2" stroke-width="2"/>
+            <circle cx="33" cy="33" r="4" fill="#154360" stroke="#5DADE2" stroke-width="2"/>
+            <path d="M2 22 Q10 14 22 14 Q34 14 42 22" stroke="#5DADE2" stroke-width="2" fill="none"/>
+          </svg>
+          <span>Tradewind Auto Body</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" id="mainNav">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="blog.html">Blog</a>
+          <a href="booking.html">Booking</a>
+          <a href="faq.html">FAQ</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="admin.html">Admin</a>
+          <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">🌙</button>
+        </nav>
+      </div>
+    </header>
+
+    <section class="page-hero animate-in">
+      <div class="container">
+        <h1>Book a Free Estimate</h1>
+        <p>Schedule your collision repair or paint estimate at our Kahului shop.</p>
+      </div>
+    </section>
+    <section class="booking-section container animate-in">
+      <div class="booking-wrapper">
+        <div class="step-indicators">
+          <div class="step-item active" id="step-ind-1">
+            <div class="step-dot">1</div>
+            <span>Service</span>
+          </div>
+          <div class="step-line"></div>
+          <div class="step-item" id="step-ind-2">
+            <div class="step-dot">2</div>
+            <span>Schedule</span>
+          </div>
+          <div class="step-line"></div>
+          <div class="step-item" id="step-ind-3">
+            <div class="step-dot">3</div>
+            <span>Contact</span>
+          </div>
+          <div class="step-line"></div>
+          <div class="step-item" id="step-ind-4">
+            <div class="step-dot">4</div>
+            <span>Confirm</span>
+          </div>
+        </div>
+
+        <form id="bookingForm" class="booking-form">
+          <div class="form-step active" id="step1">
+            <h2>Select Service</h2>
+            <div class="service-select-grid">
+              <label class="service-option">
+                <input type="radio" name="service" value="Collision Repair Estimate"/>
+                <div class="service-opt-card">
+                  <span class="svc-icon">🔧</span>
+                  <span>Collision Repair Estimate</span>
+                </div>
+              </label>
+              <label class="service-option">
+                <input type="radio" name="service" value="Paint &amp; Refinish Quote"/>
+                <div class="service-opt-card">
+                  <span class="svc-icon">🎨</span>
+                  <span>Paint &amp; Refinish Quote</span>
+                </div>
+              </label>
+              <label class="service-option">
+                <input type="radio" name="service" value="Dent Removal Assessment"/>
+                <div class="service-opt-card">
+                  <span class="svc-icon">⚡</span>
+                  <span>Dent Removal Assessment</span>
+                </div>
+              </label>
+              <label class="service-option">
+                <input type="radio" name="service" value="Rust Repair Inspection"/>
+                <div class="service-opt-card">
+                  <span class="svc-icon">🛡️</span>
+                  <span>Rust Repair Inspection</span>
+                </div>
+              </label>
+              <label class="service-option">
+                <input type="radio" name="service" value="Insurance Claim Assistance"/>
+                <div class="service-opt-card">
+                  <span class="svc-icon">📋</span>
+                  <span>Insurance Claim Assistance</span>
+                </div>
+              </label>
+              <label class="service-option">
+                <input type="radio" name="service" value="Other / General Inquiry"/>
+                <div class="service-opt-card">
+                  <span class="svc-icon">💬</span>
+                  <span>Other / General Inquiry</span>
+                </div>
+              </label>
+            </div>
+            <div class="form-nav">
+              <button type="button" class="btn btn-primary" onclick="nextStep(1)">Next →</button>
+            </div>
+          </div>
+
+          <div class="form-step" id="step2">
+            <h2>Choose Date &amp; Time</h2>
+            <div class="form-group">
+              <label for="prefDate">Preferred Date</label>
+              <input type="date" id="prefDate" name="date" required/>
+            </div>
+            <div class="form-group">
+              <label for="prefTime">Preferred Time</label>
+              <select id="prefTime" name="time">
+                <option value="">Select a time</option>
+                <option>7:30 AM</option><option>8:00 AM</option><option>8:30 AM</option>
+                <option>9:00 AM</option><option>10:00 AM</option><option>11:00 AM</option>
+                <option>1:00 PM</option><option>2:00 PM</option><option>3:00 PM</option>
+                <option>4:00 PM</option>
+              </select>
+            </div>
+            <div class="form-nav">
+              <button type="button" class="btn btn-secondary" onclick="prevStep(2)">← Back</button>
+              <button type="button" class="btn btn-primary" onclick="nextStep(2)">Next →</button>
+            </div>
+          </div>
+
+          <div class="form-step" id="step3">
+            <h2>Your Information</h2>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Kai" required/>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Nakamura" required/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="kai@example.com" required/>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(808) 555-0100"/>
+            </div>
+            <div class="form-group">
+              <label for="vehicle">Vehicle (Year, Make, Model)</label>
+              <input type="text" id="vehicle" name="vehicle" placeholder="2020 Toyota Tacoma"/>
+            </div>
+            <div class="form-group">
+              <label for="notes">Describe the Damage</label>
+              <textarea id="notes" name="notes" rows="4" placeholder="Rear bumper impact, side scrape, etc."></textarea>
+            </div>
+            <div class="form-nav">
+              <button type="button" class="btn btn-secondary" onclick="prevStep(3)">← Back</button>
+              <button type="button" class="btn btn-primary" onclick="nextStep(3)">Review →</button>
+            </div>
+          </div>
+
+          <div class="form-step" id="step4">
+            <h2>Confirm Your Request</h2>
+            <div class="confirmation-card">
+              <div id="summaryContent" class="summary-grid"></div>
+              <p class="confirm-note">Our team will confirm your appointment within 2 business hours by phone or email.</p>
+            </div>
+            <div class="form-nav">
+              <button type="button" class="btn btn-secondary" onclick="prevStep(4)">← Edit</button>
+              <button type="button" class="btn btn-primary" onclick="submitBooking()">Submit Request ✓</button>
+            </div>
+          </div>
+
+          <div class="form-step" id="step5">
+            <div class="success-message">
+              <div class="success-icon">✅</div>
+              <h2>Request Received!</h2>
+              <p>Mahalo! We'll confirm your estimate appointment within 2 business hours.</p>
+              <a href="index.html" class="btn btn-primary">Return Home</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <svg width="36" height="36" viewBox="0 0 44 44" fill="none">
+              <rect x="2" y="14" width="40" height="18" rx="5" fill="#154360"/>
+              <rect x="6" y="20" width="14" height="8" rx="2" fill="#5DADE2"/>
+              <rect x="24" y="20" width="12" height="8" rx="2" fill="#5DADE2"/>
+              <circle cx="11" cy="33" r="4" fill="#154360" stroke="#5DADE2" stroke-width="2"/>
+              <circle cx="33" cy="33" r="4" fill="#154360" stroke="#5DADE2" stroke-width="2"/>
+            </svg>
+            <p>Expert collision repair &amp; refinishing on Maui. Restoring vehicles since 2003.</p>
+          </div>
+          <div class="footer-links">
+            <h4>Pages</h4>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="blog.html">Blog</a>
+            <a href="booking.html">Booking</a>
+            <a href="faq.html">FAQ</a>
+            <a href="reviews.html">Reviews</a>
+          </div>
+          <div class="footer-contact">
+            <h4>Contact</h4>
+            <p>355 Hana Hwy<br>Kahului, HI 96732</p>
+            <p><a href="tel:+18085550119">(808) 555-0119</a></p>
+            <p>Mon–Fri: 7:30am–5:30pm</p>
+            <p>Sat: 8am–2pm</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Tradewind Auto Body. All rights reserved.</p>
+          <p>Powered by <a href="https://designholistically.com" target="_blank">Design Holistically</a></p>
+        </div>
+      </div>
+    </footer>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+    <script src="js/main.js"></script>
+</body>
+</html>
