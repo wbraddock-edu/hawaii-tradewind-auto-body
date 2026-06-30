@@ -232,3 +232,8 @@ body { font-family: 'Open Sans', sans-serif; background: var(--bg); color: var(-
   .step-line { width: 30px; }
   .footer-bottom { flex-direction: column; text-align: center; }
 }
+
+.hero h1, .hero p, .hero-content, .hero .eyebrow-label, .hero .tag { color: #fff !important; }
+
+[data-theme="dark"] .hero { background: transparent !important; }
+[data-theme="dark"] .hero-bg img { opacity: 1 !important; }
